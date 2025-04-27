@@ -38,9 +38,9 @@ void average_reduction(int arr[], int n) {
   int sum = 0;
   #pragma omp parallel for reduction(+: sum)
   for (int i = 0; i < n; i++) {
-	sum += arr[i];
+    sum += arr[i];
   }
-  cout << "Average: " << (double)sum / (n-1) << endl;
+  cout << "Average: " << (double)sum / n << endl;
 }
 
 int main() {
