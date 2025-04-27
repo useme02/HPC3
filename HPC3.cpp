@@ -62,3 +62,31 @@ int main() {
   sum_reduction(arr, n);
   average_reduction(arr, n);
 }
+
+/*
+gescoe@gescoe:~$ g++ -o gfg -fopenmp HPC3.cpp 
+
+gescoe@gescoe:~$ ./gfg
+
+ enter total no of elements=>5
+
+ enter elements=>10
+
+20
+
+30
+
+40
+
+50
+
+Minimum value: 10
+
+Maximum value: 50
+
+Sum: 150
+
+Average: 37.5
+
+
+*/
